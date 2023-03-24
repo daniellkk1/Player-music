@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Player Music</title>
+</head>
+<body>
+
+    <div class="container">
+        <p class="playlist">Playlist</p>
+        <img src="" alt="Disc cover."/>
+        <div class="name-music">
+            <div class="box-music">
+                <div class="title-music">
+                    <h3 id="music">nome da musica</h3>
+                    <p id="band">nome da banda</p><br>
+                </div>
+                <ion-icon id="heart" name="heart-outline"></ion-icon>
+            </div>
+            
+            <div id="progress-container">
+                <div class="progress">
+                    <div id="current-progress"></div>
+                </div>
+                <div id="box-time">
+                    <div id="song-time">00:00</div>
+                    <div id="total-time">00:00</div>
+                </div>
+            </div>
+            <audio src=""></audio>
+            <div class="player-icons">
+                <ion-icon class="icon" name="shuffle" id="random"></ion-icon>
+                <ion-icon class="icon" name="play-skip-back" id="previous"></ion-icon>
+                <ion-icon name="play-circle" id="play"></ion-icon>
+                <ion-icon class="icon" name="play-skip-forward" id="skip"></ion-icon>
+                <ion-icon class="icon" name="repeat" id="repeat"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
